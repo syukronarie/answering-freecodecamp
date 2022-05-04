@@ -1,0 +1,14 @@
+{
+	"name": "freecodecamp-dsa",
+	"version": "1.0.0",
+	"description": "answering data structures and algorithms in freeCodeCamp",
+	"repository": "https://github.com/syukronarie/freecodecamp-dsa.git",
+	"author": "syukronarie <syukronarie@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"serve": "serve"
+	},
+	"dependencies": {
+		"serve": "^13.0.2"
+	}
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Mocha Tests</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+
+		<!-- 🚫 🚫 🚫 🚫 🚫 Testing Dependencies. Do not edit! 🚫 🚫 🚫 🚫 🚫 -->
+		<script src="https://unpkg.com/chai/chai.js"></script>
+		<script src="https://unpkg.com/mocha/mocha.js"></script>
+		<!-- 🚫 🚫 🚫 🚫 🚫 Testing Dependencies. Do not edit! 🚫 🚫 🚫 🚫 🚫 -->
+
+		<script class="mocha-init">
+			mocha.setup('bdd');
+			const { assert } = chai;
+		</script>
+	</head>
+	<body>
+		<div id="mocha"></div>
+
+		<!-- ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ Be sure to edit the script tag! ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ -->
+		<script src="./src/basic-javascript/string-calculator.js"></script>
+		<script src="./src/basic-javascript/02-declare-javascript-variables.js"></script>
+		<script src="./src/basic-javascript/03-storing-values-with-the-assignment-operator.js"></script>
+		<!-- ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ Be sure to edit the script tag! ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ -->
+
+		<script class="mocha-exec">
+			mocha.run();
+		</script>
+	</body>
+</html>
