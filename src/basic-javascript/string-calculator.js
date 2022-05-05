@@ -13,6 +13,9 @@ const add = (inputString) => {
 	return result;
 };
 
+const chai = require('chai');
+const { assert } = chai;
+
 describe('stringCalculator', () => {
 	describe('when an empty string is passed in', () => {
 		it('returns 0', () => {

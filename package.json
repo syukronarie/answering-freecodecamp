@@ -6,9 +6,16 @@
 	"author": "syukronarie <syukronarie@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"serve": "serve"
+		"serve": "serve coverage/lcov-report",
+		"test": "mocha src/*",
+		"cover": "nyc --reporter=lcov mocha src/*"
 	},
 	"dependencies": {
 		"serve": "^13.0.2"
+	},
+	"devDependencies": {
+		"chai": "^4.3.6",
+		"mocha": "^10.0.0",
+		"nyc": "^15.1.0"
 	}
 }
