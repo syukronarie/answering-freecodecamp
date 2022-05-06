@@ -7,10 +7,6 @@ forumTopicId: 18310
 dashedName: storing-values-with-the-assignment-operator
 ---
 
-# --videoUrl--
-
-[See Video]('https://scrimba.com/c/cEanysE')
-
 # --description--
 
 In JavaScript, you can store a value in a variable with the <dfn>assignment</dfn> operator (`=`).

@@ -7,10 +7,6 @@ forumTopicId: 17556
 dashedName: declare-javascript-variables
 ---
 
-# -- videourl --
-
-[See Video](https://scrimba.com/c/cNanrHq)
-
 # --description--
 
 In computer science, <dfn>data</dfn> is anything that is meaningful to the computer. JavaScript provides eight different <dfn>data types</dfn> which are `undefined`, `null`, `boolean`, `string`, `symbol`, `bigint`, `number`, and `object`.

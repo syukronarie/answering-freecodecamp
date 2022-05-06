@@ -7,10 +7,6 @@ forumTopicId: 301171
 dashedName: initializing-variables-with-the-assignment-operator
 ---
 
-# -- videourl --
-
-[See Video](https://scrimba.com/c/cWJ4Bfb)
-
 # --description--
 
 It is common to <dfn>initialize</dfn> a variable to an initial value in the same line as it is declared.

@@ -7,10 +7,6 @@ forumTopicId: 17557
 dashedName: declare-string-variables
 ---
 
-# -- videourl --
-
-[See Video](https://scrimba.com/c/c2QvWU6)
-
 # --description--
 
 Previously you used the following code to declare a variable:
