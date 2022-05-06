@@ -1,11 +1,9 @@
 /**
- * Declare JavaScript Variables
- * Todo: Use the `var` keyword to create a variable called `myName`.
+ * Task
+ * Todo
  */
 
 // Your code below
-
-var myName;
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
@@ -31,9 +29,3 @@ var myName;
 //                         |______|______|______|______|______|
 
 const { assert } = require('chai');
-
-describe('declare javascript variable', () => {
-	it('should has var myName as undefined', () => {
-		assert(myName === undefined);
-	});
-});

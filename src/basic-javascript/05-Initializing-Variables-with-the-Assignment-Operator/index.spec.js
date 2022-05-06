@@ -1,11 +1,11 @@
 /**
- * Declare JavaScript Variables
- * Todo: Use the `var` keyword to create a variable called `myName`.
+ * Initializing Variables with the Assignment Operator
+ * Todo: Define a variable `a` with `var` and initialize it to a value of `9`.
  */
 
 // Your code below
 
-var myName;
+var a = 9;
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
@@ -32,8 +32,12 @@ var myName;
 
 const { assert } = require('chai');
 
-describe('declare javascript variable', () => {
-	it('should has var myName as undefined', () => {
-		assert(myName === undefined);
+describe('Initializing Variables with the Assignment Operator', () => {
+	it('should define a variable', () => {
+		assert.isNumber(a);
+	});
+
+	it('should var a and has value of 9', () => {
+		assert.equal(a, 9);
 	});
 });

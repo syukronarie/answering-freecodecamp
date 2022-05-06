@@ -3,6 +3,8 @@
  * Todo: Assign the contents of a to variable b.
  */
 
+// Your code below
+
 var a;
 a = 10;
 var b;

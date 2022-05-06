@@ -3,6 +3,8 @@
  * Todo: Assign the value 7 to variable a.
  */
 
+// Your code below
+
 // Setup
 var a;
 
