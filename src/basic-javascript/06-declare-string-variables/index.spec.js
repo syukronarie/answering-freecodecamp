@@ -34,12 +34,6 @@ var myLastName = 'Syukron';
 //                          ______ ______ ______ ______ ______
 //                         |______|______|______|______|______|
 
-if (typeof myFirstName !== 'undefined' && typeof myLastName !== 'undefined') {
-  (function () {
-    return myFirstName + ', ' + myLastName;
-  })();
-}
-
 const { assert } = require('chai');
 
 describe('Declare String Variables', () => {
