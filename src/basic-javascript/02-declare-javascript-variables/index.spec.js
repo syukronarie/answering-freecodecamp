@@ -40,4 +40,8 @@ describe('Declare JavaScript Variables', () => {
   it('You should declare `myName` with the `var` keyword, ending with a semicolon', () => {
     assert(/var\s+myName\s*;/.test(code));
   });
+  it('declareVariable() should return undefined', () => {
+    assert(declareVariable() === undefined);
+    assert(typeof declareVariable === 'function');
+  });
 });
