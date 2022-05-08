@@ -37,7 +37,7 @@ const c = 'I am a String!';
 
 const { assert } = require('chai');
 
-describe('first', () => {
+describe('Understanding Uninitialized Variables', () => {
   it('`a` should be defined and evaluated to have the value of `6`', () => {
     assert(typeof a === 'number' && a === 6);
   });
