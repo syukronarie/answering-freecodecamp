@@ -36,7 +36,7 @@ var myLastName = 'Syukron';
 
 const { assert } = require('chai');
 
-describe('Declare String Variables', () => {
+describe('06 - Declare String Variables', () => {
   it('`myFirstName` should be a string with at least one character in it.', () => {
     assert(
       (function () {

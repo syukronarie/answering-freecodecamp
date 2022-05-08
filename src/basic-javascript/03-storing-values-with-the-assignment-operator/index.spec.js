@@ -36,8 +36,8 @@ a = 7;
 
 const { assert } = require('chai');
 
-describe('storing values with the assignment operator', () => {
-	it('var a should has value 10', () => {
-		assert.equal(a, 7);
-	});
+describe('03 - Storing Values with the Assignment Operator', () => {
+  it('var a should has value 10', () => {
+    assert.equal(a, 7);
+  });
 });

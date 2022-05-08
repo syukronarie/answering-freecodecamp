@@ -44,17 +44,28 @@ titleCaseOver = 9000;
 
 const { assert } = require('chai');
 
-function caseSensitivity({ studlyCapVar, properCamelCase, titleCaseOver }) {
-  return {
-    studlyCapVar,
-    properCamelCase,
-    titleCaseOver,
-  };
+function caseSensitivity(object) {
+  if (typeof object !== 'undefined') {
+    const { studlyCapVar, properCamelCase, titleCaseOver } = object;
+    return {
+      studlyCapVar,
+      properCamelCase,
+      titleCaseOver,
+    };
+  }
+
+  return false;
 }
 
-const code = caseSensitivity.toString();
+const mockedObject = {
+  studlyCapVar,
+  properCamelCase,
+  titleCaseOver,
+};
 
-describe('understanding case sensitivity in variables', () => {
+const code = JSON.stringify(caseSensitivity(mockedObject));
+
+describe('08 - Understanding Case Sensitivity in Variables', () => {
   it('`studlyCapVar` should be defined and have a value of `10`.', () => {
     assert(typeof studlyCapVar !== 'undefined' && studlyCapVar === 10);
   });
@@ -67,12 +78,20 @@ describe('understanding case sensitivity in variables', () => {
     assert(typeof titleCaseOver !== 'undefined' && titleCaseOver === 9000);
   });
   it('`studlyCapVar` should use camelCase in both declaration and assignment sections.', () => {
-    assert(code.match(/studlyCapVar/g).length === 2);
+    assert(code.match(/studlyCapVar/g).length === 1);
   });
   it('`properCamelCase` should use camelCase in both declaration and assignment sections.', () => {
-    assert(code.match(/properCamelCase/g).length === 2);
+    assert(code.match(/properCamelCase/g).length === 1);
   });
   it('`titleCaseOver` should use camelCase in both declaration and assignment sections.', () => {
-    assert(code.match(/titleCaseOver/g).length === 2);
+    assert(code.match(/titleCaseOver/g).length === 1);
+  });
+  it('should return deep equal object', () => {
+    const expected = {
+      studlyCapVar: 10,
+      properCamelCase: 'A String',
+      titleCaseOver: 9000,
+    };
+    assert.deepEqual(caseSensitivity(mockedObject), expected);
   });
 });

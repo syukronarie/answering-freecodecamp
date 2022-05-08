@@ -32,12 +32,12 @@ var a = 9;
 
 const { assert } = require('chai');
 
-describe('Initializing Variables with the Assignment Operator', () => {
-	it('should define a variable', () => {
-		assert.isNumber(a);
-	});
+describe('05 - Initializing Variables with the Assignment Operator', () => {
+  it('should define a variable', () => {
+    assert.isNumber(a);
+  });
 
-	it('should var a and has value of 9', () => {
-		assert.equal(a, 9);
-	});
+  it('should var a and has value of 9', () => {
+    assert.equal(a, 9);
+  });
 });
