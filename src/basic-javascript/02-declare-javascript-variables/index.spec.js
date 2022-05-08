@@ -1,11 +1,13 @@
 /**
  * Declare JavaScript Variables
  * Todo: Use the `var` keyword to create a variable called `myName`.
+ * * You should declare `myName` with the `var` keyword, ending with a semicolon
  */
 
-// Your code below
-
-var myName;
+function declareVariable() {
+  // write your code below
+  var myName;
+}
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
@@ -32,8 +34,10 @@ var myName;
 
 const { assert } = require('chai');
 
-describe('declare javascript variable', () => {
-	it('should has var myName as undefined', () => {
-		assert(myName === undefined);
-	});
+const code = declareVariable.toString();
+
+describe('Declare JavaScript Variables', () => {
+  it('You should declare `myName` with the `var` keyword, ending with a semicolon', () => {
+    assert(/var\s+myName\s*;/.test(code));
+  });
 });
