@@ -86,7 +86,7 @@ describe('08 - Understanding Case Sensitivity in Variables', () => {
   it('`titleCaseOver` should use camelCase in both declaration and assignment sections.', () => {
     assert(code.match(/titleCaseOver/g).length === 1);
   });
-  it('should return deep equal object', () => {
+  it('`caseSensitivity()`should return deep equal object', () => {
     const expected = {
       studlyCapVar: 10,
       properCamelCase: 'A String',
