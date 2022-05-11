@@ -9,8 +9,8 @@
   "scripts": {
     "serve": "serve coverage/lcov-report",
     "test": "mocha src/**/*.spec.js",
-    "cover": "nyc --reporter=lcov mocha src/**/*.spec.js",
-    "clean": "rimraf .nyc_output coverage"
+    "clean": "rimraf .nyc_output coverage",
+    "cover": "nyc --reporter=lcov mocha src/**/*.spec.js"
   },
   "dependencies": {
     "chai": "^4.3.6",
@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
-    "rimraf": "^3.0.2"
+    "@types/sinon": "^10.0.11",
+    "rimraf": "^3.0.2",
+    "sinon": "^14.0.0"
   }
 }
