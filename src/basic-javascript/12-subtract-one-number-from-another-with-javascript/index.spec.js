@@ -49,8 +49,10 @@ describe('12 - Subtract One Number from Another with JavaScript', () => {
     assert(difference === 12);
   });
   it('You should only subtract one number from 45.', async () => {
+    const result = __helpers.removeWhiteSpace(code);
     assert(typeof code === 'string');
     assert.notEqual(code, undefined);
-    assert(/constdifference=45-33;?/.test(__helpers.removeWhiteSpace(code)));
+    assert(/difference=?/.test(result));
+    assert(/45-33?/.test(result));
   });
 });
