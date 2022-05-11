@@ -1,17 +1,18 @@
+const __helpers = require('../../helpers');
+
 /**
- * Add Two Numbers with JavaScript
- * Todo: Change the `0` so that sum will equal `20`.
- * * `sum` should equal `20`.
- * * You should use the `+` operator.
+ * Subtract One Number from Another with JavaScript
+ * Todo: Change the `0` so the difference is `12`.
+ * * The variable `difference` should be equal to 12.
+ * * You should only subtract one number from 45.
  */
 
 function writeYourCode() {
   // write your code below
-  const sum = 10 + 10;
+  const difference = 45 - 33;
 
-  // ! don't remove this for testing cases
   return {
-    sum,
+    difference,
   };
 }
 
@@ -41,14 +42,13 @@ function writeYourCode() {
 const { assert } = require('chai');
 
 const code = writeYourCode.toString();
-const { sum } = writeYourCode();
+const { difference } = writeYourCode();
 
-describe('11 - Add Two Numbers with JavaScript', () => {
-  it('`sum` should equal `20`.', () => {
-    assert(sum === 20);
+describe('12 - Subtract One Number from Another with JavaScript', () => {
+  it('The variable `difference` should be equal to 12.', () => {
+    assert(difference === 12);
   });
-  it('You should use the `+` operator.', () => {
-    assert(/\+/.test(code));
-    assert.notMatch(code, /fCC/g);
+  it('You should only subtract one number from 45.', () => {
+    assert(/difference=45-33;?/.test(__helpers.removeWhiteSpace(code)));
   });
 });
