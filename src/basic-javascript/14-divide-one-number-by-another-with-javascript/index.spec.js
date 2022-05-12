@@ -1,5 +1,3 @@
-const __helpers = require('../../helpers');
-
 /**
  * Divide One Number by Another with JavaScript
  * Todo: Change the `0` so that the `quotient` is equal to `2`.

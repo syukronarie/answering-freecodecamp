@@ -1,5 +1,3 @@
-const __helpers = require('../../helpers');
-
 /**
  * Multiply Two Decimals with JavaScript
  * Todo: Change the `0.0` so that product will equal `5.0`.

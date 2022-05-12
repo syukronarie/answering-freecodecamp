@@ -1,5 +1,3 @@
-const __helpers = require('../../helpers');
-
 /**
  * Decrement a Number with JavaScript
  * Todo: Change the code to use the `--` operator on `myVar`.

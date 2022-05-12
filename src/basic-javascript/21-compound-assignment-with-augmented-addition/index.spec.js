@@ -1,5 +1,3 @@
-const __helpers = require('../../helpers');
-
 /**
  * Compound Assignment With Augmented Addition
  * Todo: Convert the assignments for `a`, `b`, and `c` to use the `+=` operator.

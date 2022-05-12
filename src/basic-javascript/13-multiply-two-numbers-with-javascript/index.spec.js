@@ -1,5 +1,3 @@
-const __helpers = require('../../helpers');
-
 /**
  * Multiply Two Numbers with JavaScript
  * Todo: Change the `0` so that product will equal `80`.

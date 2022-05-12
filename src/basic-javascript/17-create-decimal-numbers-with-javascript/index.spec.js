@@ -1,5 +1,3 @@
-const __helpers = require('../../helpers');
-
 /**
  * Create Decimal Numbers with JavaScript
  * Todo: Create a variable `myDecimal` and give it a decimal value with a fractional part (e.g. `5.7`).
