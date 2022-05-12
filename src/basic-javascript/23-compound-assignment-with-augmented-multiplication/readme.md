@@ -54,11 +54,7 @@ assert(code.match(/\*=/g).length === 3);
 You should not modify the code above the specified comment.
 
 ```js
-assert(
-  /let a = 5;/.test(code) &&
-    /let b = 12;/.test(code) &&
-    /let c = 4\.6;/.test(code)
-);
+assert(/let a = 5;\s*let b = 12;\s*let c = 4\.6;/.test(code));
 ```
 
 # --seed--
@@ -66,7 +62,9 @@ assert(
 ## --after-user-code--
 
 ```js
-(function(a,b,c){ return "a = " + a + ", b = " + b + ", c = " + c; })(a,b,c);
+(function (a, b, c) {
+  return 'a = ' + a + ', b = ' + b + ', c = ' + c;
+})(a, b, c);
 ```
 
 ## --seed-contents--
