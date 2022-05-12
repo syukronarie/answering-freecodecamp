@@ -69,10 +69,6 @@ describe('22 - Compound Assignment With Augmented Subtraction', () => {
     assert(code.match(/-=/g).length === 3);
   });
   it('You should not modify the code above the specified comment.', () => {
-    assert(
-      /let a = 11;/.test(code) &&
-        /let b = 9;/.test(code) &&
-        /let c = 3;/.test(code)
-    );
+    assert(/let a = 11;\s*let b = 9;\s*let c = 3;/.test(code));
   });
 });

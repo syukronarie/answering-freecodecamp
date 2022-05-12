@@ -1,8 +1,11 @@
 /**
  * Compound Assignment With Augmented Division
  * Todo: Convert the assignments for `a`, `b`, and `c` to use the `/=` operator.
- * * The variable `product` should be equal to 80.
- * * You should use the `*` operator.
+ * * `a` should equal `4`.
+ * * `b` should equal `27`.
+ * * `c` should equal `3`.
+ * * You should use the `/=` operator for each variable.
+ * * You should not modify the code above the specified comment.
  */
 
 function writeYourCode() {
@@ -66,10 +69,6 @@ describe('24 - Compound Assignment With Augmented Division', () => {
     assert(code.match(/\/=/g).length === 3);
   });
   it('You should not modify the code above the specified comment.', () => {
-    assert(
-      /let a = 48;/.test(code) &&
-        /let b = 108;/.test(code) &&
-        /let c = 33;/.test(code)
-    );
+    assert(/let a = 48;\s*let b = 108;\s*let c = 33;/.test(code));
   });
 });

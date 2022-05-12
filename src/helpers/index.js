@@ -3,8 +3,8 @@
  * @description Removing Space from Entire String
  * * should returns `undefined` when arguments is falsy
  * * should returns a `string` without space when argument is truty
- * @returns `String || undefined`
- * @param {String} code
+ * @returns {string | undefined} `string || undefined`
+ * @param {string} code
  */
 
 const removeWhiteSpace = (code) => {
