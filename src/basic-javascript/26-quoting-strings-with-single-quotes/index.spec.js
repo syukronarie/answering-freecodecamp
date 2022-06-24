@@ -1,24 +1,15 @@
-const __helpers = require('../../helpers');
-
 /**
- * Increment a Number with JavaScript
- * Todo: Change the code to use the `++` operator on `myVar`.
- * * `myVar` should equal `88`.
- * * You should not use the assignment operator.
- * * You should use the `++` operator.
- * * You should not change code above the specified comment.
+ * Quoting Strings with Single Quotes
+ * Todo: Change the provided string to a string with single quotes at the beginning and end and no escape characters. Right now, the `<a>` tag in the string uses double quotes everywhere. You will need to change the outer quotes to single quotes so you can remove the escape characters.
+ * * The variable `product` should be equal to 80.
+ * * You should use the `*` operator.
  */
 
 function writeYourCode() {
   // write your code below
-
-  let myVar = 87;
-
-  // Only change code below this line
-  myVar++;
-
+  const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
   return {
-    myVar,
+    myStr,
   };
 }
 
@@ -48,24 +39,13 @@ function writeYourCode() {
 const { assert } = require('chai');
 
 const code = writeYourCode.toString();
+const { myStr } = writeYourCode();
 
-const { myVar } = writeYourCode();
-
-describe('15 - Increment a Number with JavaScript', () => {
-  it('`myVar` should equal `88`.', () => {
-    assert(myVar === 88);
-  });
-  it('You should not use the assignment operator.', async () => {
-    assert(
-      /let\s*myVar\s*=\s*87;\s*\/*.*\s*([+]{2}\s*myVar|myVar\s*[+]{2});/.test(
-        __helpers.removeWhiteSpace(code)
+describe('26 - Quoting Strings with Single Quotes', () => {
+  assert(
+    !/\\/g.test(code) &&
+      myStr.match(
+        '\\s*<a href\\s*=\\s*"http://www.example.com"\\s*target\\s*=\\s*"_blank">\\s*Link\\s*</a>\\s*'
       )
-    );
-  });
-  it('You should use the `++` operator.', () => {
-    assert(/[+]{2}\s*myVar|myVar\s*[+]{2}/.test(code));
-  });
-  it('You should not change code above the specified comment.', () => {
-    assert(/let myVar = 87;/.test(code));
-  });
+  );
 });

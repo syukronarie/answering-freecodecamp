@@ -1,24 +1,18 @@
-const __helpers = require('../../helpers');
-
 /**
- * Increment a Number with JavaScript
- * Todo: Change the code to use the `++` operator on `myVar`.
- * * `myVar` should equal `88`.
- * * You should not use the assignment operator.
- * * You should use the `++` operator.
- * * You should not change code above the specified comment.
+ * Escaping Literal Quotes in Strings
+ * Todo: Use <dfn>backslashes</dfn> to assign a string to the `myStr` variable so that if you were to print it to the console, you would see:
+ * * The variable `product` should be equal to 80.
+ * * You should use the `*` operator.
  */
 
 function writeYourCode() {
   // write your code below
 
-  let myVar = 87;
-
-  // Only change code below this line
-  myVar++;
+  // const myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+  const myStr = 'I am a "double quoted" string inside "double quotes".';
 
   return {
-    myVar,
+    myStr,
   };
 }
 
@@ -48,24 +42,12 @@ function writeYourCode() {
 const { assert } = require('chai');
 
 const code = writeYourCode.toString();
+const { product } = writeYourCode();
 
-const { myVar } = writeYourCode();
-
-describe('15 - Increment a Number with JavaScript', () => {
-  it('`myVar` should equal `88`.', () => {
-    assert(myVar === 88);
-  });
-  it('You should not use the assignment operator.', async () => {
-    assert(
-      /let\s*myVar\s*=\s*87;\s*\/*.*\s*([+]{2}\s*myVar|myVar\s*[+]{2});/.test(
-        __helpers.removeWhiteSpace(code)
-      )
-    );
-  });
-  it('You should use the `++` operator.', () => {
-    assert(/[+]{2}\s*myVar|myVar\s*[+]{2}/.test(code));
-  });
-  it('You should not change code above the specified comment.', () => {
-    assert(/let myVar = 87;/.test(code));
-  });
+describe('25 - Escaping Literal Quotes in Strings', () => {
+  it('', () => {});
+  it('', () => {});
+  it('', () => {});
+  it('', () => {});
+  it('', () => {});
 });
